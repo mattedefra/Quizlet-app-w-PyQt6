@@ -101,7 +101,6 @@ class Window(QWidget):
 
     def button_clicked(self):
         # checks if correct
-        wrong_answer = False
         checked = False
         for checkbox in self.checkbox_list:
             if checkbox.isChecked():
@@ -119,8 +118,6 @@ class Window(QWidget):
                         f"Wrong! {[answer for answer in questions[self.label.text()] if answer.endswith(correct_marker)][0].replace(correct_marker, '')}")
                     break
         if not checked: print("No answer:(")
-        if wrong_answer:
-            pass
         QTimer.singleShot(1000, self.change_question)
 
 
