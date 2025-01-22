@@ -1,1 +1,1 @@
-# Quizlet-app-w-PyQt6
+# [Learning OOP]Quizlet-app-w-PyQt6
